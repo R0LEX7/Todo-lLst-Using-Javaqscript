@@ -140,7 +140,7 @@ input[type="checkbox"] {
 
 
 
-/* .bubble.personal::after {
+ .bubble.personal::after {
   background-color: var(--personal);
   box-shadow: var(--personal-glow);
 }
@@ -148,7 +148,7 @@ input[type="checkbox"] {
 .bubble.business::after {
   background-color: var(--business);
   box-shadow: var(--business-glow);
-} */
+} 
 
 input:checked ~ .bubble::after {
   width: 10px;

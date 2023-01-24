@@ -54,10 +54,16 @@ function DisplayTodos () {
 		input.type = 'checkbox';
 		input.checked = todo.done;
 		span.classList.add('bubble');
+		span.classList.add('business');
 		// if (todo.category == 'personal') {
 		// 	span.classList.add('personal');
-		// } else {
+		// 	span.classList.remove('business');
+
+		// } 
+		// else {
+		// 	span.classList.remove('personal');
 		// 	span.classList.add('business');
+
 		// }
 		content.classList.add('todo-content');
 		actions.classList.add('actions');
@@ -121,7 +127,8 @@ function DisplayTodos () {
 
 
 function removeAll() {
-			const todoList = document.querySelector('#todo-list');
-            localStorage.clear();
-        	todoList.innerHTML = "";
+	localStorage.clear();
+	const todoList = document.querySelector('#todo-list');
+	todoList.innerHTML = "";
+	window.location.reload();
         }
